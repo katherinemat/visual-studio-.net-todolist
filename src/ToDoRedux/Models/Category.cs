@@ -7,13 +7,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ToDoRedux.Models
 {
-    [Table("Items")]
-    public class Item
+    [Table("Categories")]
+    public class Category
     {
+        public Category()
+        {
+            this.Items = new HashSet<Item>();
+        }
+
         [Key]
-        public int ItemId { get; set; }
-        public string Description { get; set; }
         public int CategoryId { get; set; }
-        public virtual Category Category { get; set; }
+        public string Name { get; set; }
+        public virtual ICollection<Item> Items { get; set; }
     }
 }

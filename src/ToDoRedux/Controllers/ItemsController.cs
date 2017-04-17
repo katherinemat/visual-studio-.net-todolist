@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ToDoRedux.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,7 +17,7 @@ namespace ToDoRedux.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return View(db.Items.ToList());
+            return View(db.Items.Include(items => items.Category).ToList());
         }
 
         public IActionResult Details(int id)
@@ -27,6 +28,7 @@ namespace ToDoRedux.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
             return View();
         }
 
@@ -41,6 +43,8 @@ namespace ToDoRedux.Controllers
         public IActionResult Edit(int id)
         {
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
+            ViewBag.TestString = "hey";
             return View(thisItem);
         }
 

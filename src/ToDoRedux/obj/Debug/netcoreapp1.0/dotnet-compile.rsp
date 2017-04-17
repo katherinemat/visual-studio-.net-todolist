@@ -1,5 +1,5 @@
---temp-output:c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\obj\Debug\netcoreapp1.0\
---out:c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\bin\Debug\netcoreapp1.0\ToDoRedux.dll
+--temp-output:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\bin\Debug\netcoreapp1.0\ToDoRedux.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -174,10 +174,11 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\obj\Debug\netcoreapp1.0\ToDoReduxdotnet-compile.deps.json",ToDoRedux.deps.json
-c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\Program.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\Startup.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\Controllers\HomeController.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\Controllers\ItemsController.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\Models\Item.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\ToDoRedux\src\ToDoRedux\Models\ToDoReduxContext.cs
+--resource:"C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\obj\Debug\netcoreapp1.0\ToDoReduxdotnet-compile.deps.json",ToDoRedux.deps.json
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Program.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Startup.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Controllers\HomeController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Controllers\ItemsController.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Models\Category.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Models\Item.cs
+C:\Users\epicodus\Documents\Visual Studio 2015\Projects\ToDoRedux\src\ToDoRedux\Models\ToDoReduxContext.cs
