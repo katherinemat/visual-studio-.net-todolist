@@ -58,11 +58,11 @@ namespace ToDoRedux.Controllers
             return View(thisItem);
         }
 
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeleteConfirmed(int id)
+        [HttpPost]
+        public IActionResult Delete(Item item)
         {
-            var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
-            db.Items.Remove(thisItem);
+            //var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
+            db.Items.Remove(item);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
