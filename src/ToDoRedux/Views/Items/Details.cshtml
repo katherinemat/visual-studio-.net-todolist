@@ -8,6 +8,16 @@
 <hr />
 
 <p>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</p>
-<p>@Html.DisplayNameFor(model => model.CategoryId) : @Html.DisplayFor(model => model.CategoryId)</p>
+<p>@Html.DisplayNameFor(model => model.CategoryId) : @ViewBag.Category.Name</p>
+
+@if (Model.Done == true)
+{
+    <h2>OH THANK GOD IT'S DONE</h2>
+}
+else
+{
+    <h1>THERE'S WORK TO DO YET</h1>
+
+}
 
 <p>@Html.ActionLink("Edit", "Edit", new { id = Model.ItemId }) | @Html.ActionLink("Back to List", "Index")</p>

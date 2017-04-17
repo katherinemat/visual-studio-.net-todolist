@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ToDoRedux.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -23,6 +24,8 @@ namespace ToDoRedux.Controllers
         public IActionResult Details(int id)
         {
             var thisItem = db.Items.FirstOrDefault(items => items.ItemId == id);
+            ViewBag.Category = db.Categories.FirstOrDefault(categories => categories.CategoryId == thisItem.CategoryId);
+            Debug.WriteLine($"The category name is {ViewBag.Category.Name}");
             return View(thisItem);
         }
 

@@ -14,6 +14,7 @@ namespace ToDoRedux.Models
         public int ItemId { get; set; }
         public string Description { get; set; }
         public int CategoryId { get; set; }
+        public bool Done { get; set; }
         public virtual Category Category { get; set; }
     }
 }
